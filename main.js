@@ -23,6 +23,3 @@ for (var i = 1; i <= 100; i++) {
     fizzBuzzPath.innerHTML += '<li>' + i + '</li>';
   }
 }
-
-//visualizzazione risultati a schermo
-// document.getElementById('fizzbuzz-results').innerHTML = '<li>' + fizzBuzzResult.join('</li><li>') + '</li>';
