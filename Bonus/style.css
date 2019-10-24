@@ -1,0 +1,16 @@
+ul {
+  list-style-type: none;
+  font-size: 20px;
+}
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.orange {
+  color: orange;
+}
