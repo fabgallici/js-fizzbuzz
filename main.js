@@ -7,21 +7,20 @@
 var fizz = 3;
 var buzz = 5;
 var fizzBuzzResult;
-var fizzBuzzPath = document.getElementById('fizzbuzz-results').innerHTML;
+var fizzBuzzPath = document.getElementById('fizzbuzz-results');
 
 for (var i = 1; i <= 100; i++) {
-  fizzBuzzResult = document.getElementById('fizzbuzz-results').innerHTML;
   if (i % fizz === 0 && i % buzz === 0) { //controllo prima che il numero sia multiplo di entrambi
     console.log('FizzBuzz');
-    document.getElementById('fizzbuzz-results').innerHTML = fizzBuzzResult + '<li>' + 'FizzBuzz' + '</li>';
+    fizzBuzzPath.innerHTML += '<li>' + 'FizzBuzz' + '</li>';
   } else if (i % fizz === 0) { //controllo se num iesimo è multiplo di 3
     console.log('Fizz');
-    document.getElementById('fizzbuzz-results').innerHTML = fizzBuzzResult + '<li>' + 'Fizz' + '</li>';
+    fizzBuzzPath.innerHTML += '<li>' + 'Fizz' + '</li>';
   } else if (i % buzz === 0) {  //controllo se num iesimo è multiplo di 5
-    document.getElementById('fizzbuzz-results').innerHTML = fizzBuzzResult + '<li>' + 'Buzz' + '</li>';
+    fizzBuzzPath.innerHTML += '<li>' + 'Buzz' + '</li>';
   } else {  //se nessuna condizione si verifica stampo il numero stesso
     console.log(i);
-    document.getElementById('fizzbuzz-results').innerHTML = fizzBuzzResult + '<li>' + i + '</li>';
+    fizzBuzzPath.innerHTML += '<li>' + i + '</li>';
   }
 }
 
