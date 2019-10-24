@@ -10,11 +10,11 @@ var fizzBuzzResult = [];  //inizializzo array che conterra i risultati finali
 
 for (var i = 1; i <= 100; i++) {
   if (i % fizz === 0 && i % buzz === 0) { //controllo prima che il numero sia multiplo di entrambi
-    fizzBuzzResult.push('<span class="blue">FizzBuzz</span>');
+    fizzBuzzResult.push('<span class="blue">"FizzBuzz"</span>');
   } else if (i % fizz === 0) { //controllo se num iesimo è multiplo di 3
-    fizzBuzzResult.push('<span class="red">Fizz</span>');
+    fizzBuzzResult.push('<span class="red">"Fizz"</span>');
   } else if (i % buzz === 0) {  //controllo se num iesimo è multiplo di 5
-    fizzBuzzResult.push('<span class="orange">Buzz</span>');
+    fizzBuzzResult.push('<span class="orange">"Buzz"</span>');
   } else {  //se nessuna condizione si verifica stampo il numero stesso
     fizzBuzzResult.push('<span class="green">' + i + '</span>');
   }
