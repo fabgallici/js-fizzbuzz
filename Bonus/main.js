@@ -21,4 +21,4 @@ for (var i = 1; i <= 100; i++) {
 }
 
 //visualizzazione risultati a schermo
-document.getElementById('fizzbuzz-results').innerHTML = '<li>' + fizzBuzzResult.join('</li><li>') + '</li>';
+document.getElementById('fizzbuzz-results').innerHTML = fizzBuzzResult.join('');
